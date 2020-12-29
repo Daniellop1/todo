@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/project
     docker:
-      - image: circleci/node:10.15.1
+      - image: circleci/node:10.23.0
     steps:
       - checkout
       - run:
@@ -21,7 +21,7 @@ jobs:
   unit:
     working_directory: ~/project
     docker:
-      - image: circleci/node:10.15.1
+      - image: circleci/node:10.23.0
     environment:
       JEST_JUNIT_OUTPUT: "test-results/jest/results.xml"
     steps:
